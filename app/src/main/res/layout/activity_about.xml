@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <Button
+        android:id="@+id/bt_menu"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="#F46AFF"
+        android:backgroundTint="@color/white"
+        android:text="Powrót"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.954" />
+
+    <TextView
+        android:id="@+id/tv_about"
+        android:layout_width="340dp"
+        android:layout_height="500dp"
+        android:layout_marginTop="40dp"
+        android:justificationMode="inter_word"
+        android:text="Celem gry Arkanoid jest zniszczenie wszystkich bloków na ekranie za pomocą piłki i paletki. Gracz
+kontroluje paletkę, poruszając nią w lewo i w prawo po dolnej krawędzi ekranu. Piłka zaczyna grę na
+paletce i jest odbijana w górę w kierunku bloków. Ekran w grze Arkanoid jest wypełniony różnymi
+kolorowymi blokami ułożonymi w różnych konfiguracjach. Bloki mają różne właściwości, takie jak
+trwałość, co oznacza, ile uderzeń piłką są potrzebne do zniszczenia bloku. Gracz musi używać paletki, aby
+odbijać piłkę i kierować ją w stronę bloków, próbując zniszczyć jak najwięcej bloków. Piłka odbija się od
+ścian bocznych i górnej krawędzi ekranu. Jeśli piłka dotknie dolnej krawędzi ekranu, gracz traci jedno
+życie (jeśli ograniczone) lub kończy grę (jeśli życia się skończą). Niektóre bloki mogą zawierać bonusy,
+takie jak rozszerzenia paletki, dodatkowe piłki, przyspieszenia itp. Gracz może zbierać te bonusy,
+ułatwiając sobie zadanie w niszczeniu bloków. Gry typu Arkanoid często składają się z kilku poziomów, z
+różnymi układami bloków na każdym poziomie. Po zniszczeniu wszystkich bloków na danym poziomie,
+gracz przechodzi do kolejnego. Gracz kończy grę, gdy straci wszystkie życia, czyli gdy piłka przeleci dolną
+krawędź ekranu, a gracz nie zdąży jej odbić. Celem jest uzyskanie jak najwyższego wyniku poprzez
+zniszczenie jak największej liczby bloków."
+        android:textSize="14dp"
+        android:textColor="#F46AFF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.026" />
+
+    <TextView
+        android:id="@+id/tv_credits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:justificationMode="inter_word"
+        android:text="Autor: Kacper Szatlach"
+        android:textColor="#F46AFF"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_about"
+        app:layout_constraintTop_toBottomOf="@+id/tv_about" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <Button
+        android:id="@+id/bt_game"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:text="Graj"
+        android:textColor="#F46AFF"
+        android:textSize="20dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <Button
+        android:id="@+id/bt_high_scores"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp"
+        android:textColor="#F46AFF"
+        android:text="Najwyższe wyniki"
+        android:backgroundTint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_game" />
+
+    <Button
+        android:id="@+id/bt_about"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp"
+        android:textColor="#F46AFF"
+        android:text="O grze"
+        android:backgroundTint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_options" />
+
+    <Button
+        android:id="@+id/bt_options"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp"
+        android:textColor="#F46AFF"
+        android:text="Opcje"
+        android:backgroundTint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_high_scores" />
+
+    <Button
+        android:id="@+id/bt_exit"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        android:text="Wyjście"
+        android:textColor="#F46AFF"
+        android:textSize="20dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_about"
+        app:layout_constraintVertical_bias="0.006" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="480dp"
+        android:layout_height="240dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+</androidx.constraintlayout.widget.ConstraintLayout>
